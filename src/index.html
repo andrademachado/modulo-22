@@ -8,18 +8,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/balão.png" width="200" height="150" alt="Balões">
+          
             <p class="hero__text">
-                Venha celebrar comigo o meu aniversário que começa em 15d 12h 20m 15s.
+                Venha celebrar comigo o meu aniversário que começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Av.Itamar Franco -Salvador -BA
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        08/07/2024 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
         </div>
 
     </header>
+    <section class="event event--ambiente" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Ambiente Agradável</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veritatis ratione harum fugiat tempore, minus, obcaecati laborum, assumenda quis quo perferendis quisquam ex dicta excepturi! Qui in excepturi nesciunt ratione!
+                </p>
+            </div>
+            <img class="event__image" src="./images/mesa_vista.png" alt="Masa ao Ar livre">
+        </div>
+    </section>
+    <section class="event event--musica event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Música ao vivo</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veritatis ratione harum fugiat tempore, minus, obcaecati laborum, assumenda quis quo perferendis quisquam ex dicta excepturi! Qui in excepturi nesciunt ratione!
+                </p>
+            </div>
+            <img class="event__image" src="./images/violão.png"  alt="Violão">
+        </div>
+    </section>
+    <section class="event event--playground">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Playground</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veritatis ratione harum fugiat tempore, minus, obcaecati laborum, assumenda quis quo perferendis quisquam ex dicta excepturi! Qui in excepturi nesciunt ratione!
+                </p>
+            </div>
+            <img class="event__image" src="./images/espaco_infantil.png" alt="Masa ao Ar livre">
+        </div>
+    </section>
+    <section class="event event--surpresa event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Haverá uma Surpresa </h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veritatis ratione harum fugiat tempore, minus, obcaecati laborum, assumenda quis quo perferendis quisquam ex dicta excepturi! Qui in excepturi nesciunt ratione!
+                </p>
+            </div>
+            <img class="event__image" src="./images/surpresa.png" alt="Masa ao Ar livre">
+        </div>
+    </section>
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
